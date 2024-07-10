@@ -1,4 +1,4 @@
-package com.example.examplemod;
+package net.elibaddmass.tutorialmod;
 
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
