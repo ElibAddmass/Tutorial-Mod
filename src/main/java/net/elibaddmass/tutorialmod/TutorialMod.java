@@ -1,7 +1,9 @@
 package net.elibaddmass.tutorialmod;
 
 import com.mojang.logging.LogUtils;
-import net.elibaddmass.tutorialmod.items.ModItems;
+import net.elibaddmass.tutorialmod.block.ModBlocks;
+import net.elibaddmass.tutorialmod.item.ModCreativeModeTabs;
+import net.elibaddmass.tutorialmod.item.ModItems;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -25,8 +27,11 @@ public class TutorialMod {
     public TutorialMod()
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+        
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -42,6 +47,10 @@ public class TutorialMod {
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.SAPPHIRE);
+            event.accept(ModBlocks.SAPPHIRE_ORE);
+            event.accept(ModBlocks.END_SAPPHIRE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.NETHER_SAPPHIRE_ORE);
             event.accept(ModItems.RAW_SAPPHIRE);
         }
 

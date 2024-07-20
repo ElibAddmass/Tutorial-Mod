@@ -1,5 +1,18 @@
 {
-  "item.tutorialmod.sapphire" : "Sapphire",
-  "item.tutorialmod.raw_sapphire" : "Raw Sapphire"
+  "item.tutorialmod.sapphire": "Sapphire",
+  "item.tutorialmod.raw_sapphire": "Raw Sapphire",
 
+  "item.tutorialmod.metal_detector": "Metal Detector",
+
+  "block.tutorialmod.sound_block": "Block of Sound",
+
+  "block.tutorialmod.sapphire_block": "Block of Sapphire",
+  "block.tutorialmod.raw_sapphire_block": "Block of Raw Sapphire",
+  "block.tutorialmod.sapphire_ore": "Sapphire Ore",
+  "block.tutorialmod.nether_sapphire_ore": "Netherrack Sapphire Ore",
+  "block.tutorialmod.end_sapphire_ore": "End Stone Sapphire Ore",
+  "block.tutorialmod.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+
+
+  "creativetab.tutorial_tab": "Sapphire"
 }
